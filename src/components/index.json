@@ -1,0 +1,148 @@
+{
+  "userId": 1,
+  "firstName": "Samantha",
+  "surname": "Samantha",
+  "image": "https://images.unsplash.com/photo-1665686374006-b8f04cf62d57?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+  "jobTitle": "Senior UI/UX Designer",
+  "skills": [
+    {
+      "name": "Javascript",
+      "level": "Proficient"
+    },
+    {
+      "name": "C/C++",
+      "level": "Proficient"
+    },
+    {
+      "name": "Python",
+      "level": "Proficient"
+    },
+    {
+      "name": "Kotlin",
+      "level": "Intermediate"
+    },
+    {
+      "name": "HTML",
+      "level": "Intermediate"
+    },
+    {
+      "name": "CSS",
+      "level": "Intermediate"
+    },
+    {
+      "name": "Wordpress",
+      "level": "Basic"
+    }
+  ],
+  "tools": [
+    "Git",
+    "GitHub",
+    "Vite",
+    "Vue CLI",
+    "Artisan CLI",
+    "Jira",
+    "Postman",
+    "VSCode"
+  ],
+  "workExperience": [
+    {
+      "jobTitle": "Senior UI/UX Designer",
+      "jobLocation": "AmaliTech Services GmbH, Takoradi, Ghana",
+      "startDate": "March 2022",
+      "endDate": "Present",
+      "jobDescription": [
+        "Led the backend development for AmaliTech's Enterprise Resource Management (ERP) system using a scalable microservices architecture.",
+        "Responsible for overall user interface design and user experience for a SaaS Virtual Platform using View and Note.",
+        "Trained and mentored junior designers at the service centre and helped assess them professionally."
+      ]
+    },
+    {
+      "jobTitle": "Junior Front-end Developer",
+      "jobLocation": "AmaliTech Services GmbH, Takoradi, Ghana",
+      "startDate": "Jan 2021",
+      "endDate": "April 2022",
+      "jobDescription": [
+        "Successfully developed front-end views for Blogging, Vlogging and Podcast functionalities for a Virtual platform for the German Chamber of Commerce in Ghana (Virtualihk.net)",
+        "Successfully created front-end views for AmaliFair (virtual event platform)"
+      ]
+    },
+    {
+      "jobTitle": "Intern",
+      "jobLocation": "Heiman Software Labs, Kumasi, Ghana",
+      "startDate": "Oct 2020",
+      "endDate": "Dec 2021",
+      "jobDescription": [
+        "Learned about the operations of the company's software programming team",
+        "Coordinated communications between multiple departments"
+      ]
+    }
+  ],
+  "awardsAndCertifications": [
+    {
+      "certification": "Certificate of completion of the Awesomity Lab Bootcamp",
+      "startDate": "Jan 2022",
+      "endDate": "April 2022"
+    },
+    {
+      "certification": "Certificate of completion of Android Development Course in WeCode Programme",
+      "startDate": "June 202",
+      "endDate": "Aug 2021"
+    }
+  ],
+  "volunteerWork": [
+    {
+      "role": "Volunteer Math Teacher",
+      "work": "Lily River Children's Foundation"
+    },
+    {
+      "role": "Member",
+      "work": "Coding Masters Club, Roseton Chapter"
+    }
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "level": "Native"
+    },
+    {
+      "name": "Swahili",
+      "level": "Native"
+    },
+    {
+      "name": "French",
+      "level": "Fluent"
+    },
+    {
+      "name": "German",
+      "level": "Basic"
+    }
+  ],
+  "education": [
+    {
+      "Programme": "Graduate Training Programme",
+      "institution": "AmaliTech gGmbH, Takoradi, Ghana",
+      "yearGrad": "2022",
+      "specialization": [
+        "Front-end Development (React JS, iQuery, Sass and Vue JS)"
+      ]
+    },
+    {
+      "Programme": "Master of Science in Computer Science",
+      "institution": "Takoradi Technical University, Takoradi, Ghana",
+      "yearGrad": "2021",
+      "specialization": [
+        "Founder, DLU Coding Club",
+        "Champion, Beechtown Hackathon 2020"
+      ]
+    },
+    {
+      "Programme": "Bachelor of Science in Computer Science",
+      "institution": "De Loureigh University, Kumasi, Ghana",
+      "yearGrad": "2022",
+      "specialization": [
+        "Founder, DLU Coding Club",
+        "Champion, Beechtown Hackathon 2020"
+      ]
+    }
+  ]
+}
