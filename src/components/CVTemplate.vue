@@ -83,8 +83,8 @@ export default{
     <!-- rightSide panel start from here -->
     <div class="rightSide">
       <div class="p-3 w-full h-80 nameSide">
-        <div class="w-full pr-10 mt-3 d-flex justify-content-end">
-          <img class="img-fluid w-40 h-20 object-contain" src="./amalitech logo.png" alt="" />
+        <div class="w-full d-flex justify-content-end">
+          <img class="img-fluid w-40 h-20 object-contain" src="https://amalitech.com/wp-content/uploads/2020/04/amali-services-white-01-300x86.png" alt="" />
         </div>
         <div class="mt-16 ml-10 text-4xl">
           <h1 class="block fs-1 leading-tight font-bold text-white " id="name">{{ data.firstName }}</h1>
