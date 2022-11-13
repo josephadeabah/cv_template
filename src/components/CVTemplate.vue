@@ -9,8 +9,11 @@ export default{
   }
   },
   methods: {
-    changeList() {
+    goNext() {
       this.data = users[++this.index] || users[this.index=0]
+    },
+    goBack() {
+      this.data = users[users.length] || users[this.index--]
     }
   }
 }
@@ -19,7 +22,7 @@ export default{
 
 
 <template>
-  <div class="d-flex"> <button class="btn btn-outline-info d-block" @click="changeList">View Next</button></div>
+  <div class="d-flex"> <button class="btn btn-outline-info mx-1" @click="goNext">Next</button><button class="btn btn-outline-info mx-1" @click="goBack">Prev</button></div>
   <div class="flex mx-auto max-w-5xl shadow-lg">
     <!-- leftSide panel start from here -->
     <div class="leftSide bg-slate-200">
