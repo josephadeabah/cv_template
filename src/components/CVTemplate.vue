@@ -1,27 +1,35 @@
-<script setup>
-import data from "../components/index.json"
+<script>
+import users from "../components/index.json"
+
+export default{
+  data(){
+    return{
+    sourceList: users,
+    index: 0
+  }
+  },
+  computed: {
+    data: ({ sourceList, index }) => sourceList.shift()
+  },
+  methods: {
+    changeList() {
+      this.index = Math.min(this.index + 1, this.sourceList.length + 1)
+    }
+  }
+}
+
+
+
 </script>
 
-<style>
-.nameSide {
-  background-color: #0C4767;
-  color: #E1E1E1;
-}
 
-.rightSide {
-  flex: 4;
-}
-
-.leftSide {
-  flex: 2;
-}
-</style>
 
 <template>
+  <div class="d-flex"> <button class="btn btn-outline-info d-block" @click="changeList">View Next</button></div>
   <div class="flex mx-auto max-w-5xl shadow-lg">
     <!-- leftSide panel start from here -->
     <div class="leftSide bg-slate-200">
-      <img class="object-cover w-full img-fluid h-80 " id="profile" :src="data?.image" alt="Modern building architecture" />
+      <img class="object-cover w-full img-fluid h-80 " id="profile" :src="data.image" alt="Modern building architecture" />
       <!-- skills area -->
       <div class="pb-5">
         <div class="pt-3 px-5 text-lg ">
@@ -130,3 +138,18 @@ import data from "../components/index.json"
     </div>
   </div>
   </template>
+
+<style>
+.nameSide {
+  background-color: #0C4767;
+  color: #E1E1E1;
+}
+
+.rightSide {
+  flex: 4;
+}
+
+.leftSide {
+  flex: 2;
+}
+</style>
