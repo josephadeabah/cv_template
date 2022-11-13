@@ -13,7 +13,7 @@ export default{
       this.data = users[++this.index] || users[this.index=0]
     },
     goBack() {
-      this.data = users[users.length] || users[this.index--]
+      this.data = users[users.length] || users[--this.index]
     }
   }
 }
