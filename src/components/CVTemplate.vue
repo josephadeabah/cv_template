@@ -13,7 +13,7 @@ export default{
   },
   methods: {
     changeList() {
-      this.index = Math.min(this.index + 1, this.sourceList.length + 1)
+      this.index = Math.min(this.index + 1, this.sourceList.length + 2)
     }
   }
 }
