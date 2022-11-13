@@ -4,22 +4,16 @@ import users from "../components/index.json"
 export default{
   data(){
     return{
-    sourceList: users,
-    index: 0
+    index: -1,
+    data:{}
   }
-  },
-  computed: {
-    data: ({ sourceList, index }) => sourceList.shift()
   },
   methods: {
     changeList() {
-      this.index = Math.min(this.index + 1, this.sourceList.length + 2)
+      this.data = users[++this.index] || users[this.index=0]
     }
   }
 }
-
-
-
 </script>
 
 
