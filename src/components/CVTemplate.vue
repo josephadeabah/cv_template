@@ -15,7 +15,10 @@ export default{
     goBack() {
       this.data = users[users.length] || users[--this.index] || users[this.index=0]
     }
-  }
+  },
+  mounted() {
+    this.goNext();
+  },
 }
 </script>
 
