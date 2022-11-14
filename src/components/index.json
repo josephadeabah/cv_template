@@ -2,8 +2,8 @@
   {
   "userId": 1,
   "firstName": "Samantha",
-  "surname": "Samantha",
-  "image": "https://imgs.search.brave.com/wqJqW5J6S6Qg8YRc3t56tJEwaVEIk67IbVfkPCWzWWM/rs:fit:600:600:1/g:ce/aHR0cDovL3RoaXNw/aXguY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDE5LzA0L0ph/bWFpY2EtUGFzc3Bv/cnQtUGhvdG8uanBn",
+  "surname": "Jane",
+  "image": "https://images.unsplash.com/photo-1590650153855-d9e808231d41?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
   "jobTitle": "Senior UI/UX Designer",
   "skills": [
     {
@@ -151,8 +151,8 @@
 {
   "userId": 2,
   "firstName": "Edward",
-  "surname": "Heus",
-  "image": "https://images.unsplash.com/photo-1668183261803-e8f2fb7622dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+  "surname": "Nou",
+  "image": "https://images.unsplash.com/photo-1472711649025-510d7c09a6fb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1181&q=80",
   "jobTitle": "Senior Software Engineer",
   "skills": [
     {
@@ -296,9 +296,9 @@
 
 {
   "userId": 3,
-  "firstName": "Jason",
+  "firstName": "Alberta",
   "surname": "Lewis",
-  "image": "https://images.unsplash.com/photo-1661956603025-8310b2e3036d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+  "image": "https://images.unsplash.com/photo-1612115958726-9af4b6bd28d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80",
   "jobTitle": "Senior Engineering Manager",
   "skills": [
     {
@@ -444,9 +444,9 @@
 },
 {
   "userId": 4,
-  "firstName": "Alice",
+  "firstName": "Alex",
   "surname": "Doe",
-  "image": "https://images.unsplash.com/photo-1664574652984-5b5f769bef07?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+  "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
   "jobTitle": "Senior Data Analyst",
   "skills": [
     {
