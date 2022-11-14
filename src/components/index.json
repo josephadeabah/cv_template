@@ -299,7 +299,7 @@
   "firstName": "Alberta",
   "surname": "Lewis",
   "image": "https://images.unsplash.com/photo-1612115958726-9af4b6bd28d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80",
-  "jobTitle": "Senior Engineering Manager",
+  "jobTitle": "Senior Data Analyst",
   "skills": [
     {
       "name": "Communication",
@@ -447,7 +447,7 @@
   "firstName": "Alex",
   "surname": "Doe",
   "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-  "jobTitle": "Senior Data Analyst",
+  "jobTitle": "Senior Engineering Manager",
   "skills": [
     {
       "name": "SQL",
