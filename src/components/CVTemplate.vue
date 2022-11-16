@@ -29,11 +29,11 @@ export default{
 <template>
   <div>
     <div class="d-flex mb-3 bgg mt-5">
-      <button class="btn btn-outline-info mx-1" @click="goNext">Next</button>
       <button class="btn btn-outline-info mx-1" @click="goBack">Prev</button>
+      <button class="btn btn-outline-info mx-1" @click="goNext">Next</button>
       <button class="btn btn-outline-info mx-1" @click="generatePDF">Print</button>
     </div>
-    <div class="mx-auto max-w-5xl shadow-lg" id="pdf">
+    <div class="mx-auto max-w-5xl " id="pdf">
     <!-- leftSide panel start from here -->
     
     <div class="d-flex bg-slate-200">
@@ -43,9 +43,10 @@ export default{
 
       <div class="u-info-pane">
         <div class="w-full d-flex justify-content-end">
-          <img class="logoimg" src="https://amalitech.com/wp-content/uploads/2020/04/amali-services-white-01-300x86.png" alt="" />
+          <img class="logoimg" src="./amalitech logo.png" alt="logo" />
+          <!-- <img class="logoimg" src="https://amalitech.com/wp-content/uploads/2020/04/amali-services-white-01-300x86.png" alt="" /> -->
         </div>
-        <div class="px-3 text-4xl">
+        <div class="px-10 pt-4 text-4xl">
           <h1 class="block fs-1 leading-tight font-bold text-white " id="name">{{ data.firstName }}</h1>
           <p class=" fs-3 font-medium " id="title">{{ data.jobTitle }}</p>
         </div>
@@ -54,7 +55,7 @@ export default{
 
     <div class="d-flex">
      <!-- skills area -->
-     <div class=" leftr bg-slate-200">
+     <div class=" leftr bg-slate-200 px-2">
         <div class="pt-3 p-3 text-lg ">
           <div class="">
             <h3 class="uppercase text-xl text-sky-600 font-semibold">Skills/Proficiency </h3>
@@ -97,7 +98,7 @@ export default{
       </div>
 
       <!-- A block of Work Experience -->
-      <div class="pt-3 rightr p-3 bg-white text-lg ">
+      <div class="pt-3 rightr p-10 bg-white text-lg ">
         <div class="">
           <div class="uppercase tracking-wide text-xl text-sky-600 font-bold mb-3">Work Experience</div>
           <div class="" v-for="item of data.workExperience">
@@ -150,6 +151,7 @@ export default{
   width: 70%;
   background-color: #0C4767;
   color: #E1E1E1;
+  padding-right: 25px;
 }
 
 .bgc{
@@ -157,13 +159,13 @@ export default{
   color: #E1E1E1;
 }
 .logoimg{
-  height: 100px;
-  width: 200px;
+  height: 120px;
+  width: 380px;
   object-fit: contain;
 }
 .profile{
   width: 100%;
-  height:200px;
+  height:280px;
   object-fit: cover; 
 }
 .left{
