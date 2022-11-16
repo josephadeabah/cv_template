@@ -5,7 +5,8 @@ export default{
   data(){
     return{
     index: -1,
-    data:{}
+    data:{},
+    show: true
   }
   },
   methods: {
@@ -14,6 +15,9 @@ export default{
     },
     goBack() {
       this.data = users[users.length] || users[--this.index] || users[this.index=0]
+    },
+    generatePDF() {
+      window.print();
     }
   },
   mounted() {
@@ -22,47 +26,57 @@ export default{
 }
 </script>
 
-
-
 <template>
-  <div class="d-flex"> <button class="btn btn-outline-info mx-1" @click="goNext">Next</button><button class="btn btn-outline-info mx-1" @click="goBack">Prev</button></div>
-  <div class="flex mx-auto max-w-5xl shadow-lg">
+  <div>
+    <div class="d-flex mb-3 bgg mt-5">
+      <button class="btn btn-outline-info mx-1" @click="goNext">Next</button>
+      <button class="btn btn-outline-info mx-1" @click="goBack">Prev</button>
+      <button class="btn btn-outline-info mx-1" @click="generatePDF">Print</button>
+    </div>
+    <div class="mx-auto max-w-5xl shadow-lg" id="pdf">
     <!-- leftSide panel start from here -->
-    <div class="leftSide bg-slate-200">
-      <img class="object-cover w-full img-fluid h-80 " id="profile" :src="data.image" alt="Modern building architecture" />
-      <!-- skills area -->
-      <div class="pb-5">
-        <div class="pt-3 px-5 text-lg ">
+    
+    <div class="d-flex bg-slate-200">
+      <div class="left">
+        <img class="profile" :src="data.image" alt="Modern building architecture" />
+      </div>
+
+      <div class="u-info-pane">
+        <div class="w-full d-flex justify-content-end">
+          <img class="logoimg" src="https://amalitech.com/wp-content/uploads/2020/04/amali-services-white-01-300x86.png" alt="" />
+        </div>
+        <div class="px-3 text-4xl">
+          <h1 class="block fs-1 leading-tight font-bold text-white " id="name">{{ data.firstName }}</h1>
+          <p class=" fs-3 font-medium " id="title">{{ data.jobTitle }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex">
+     <!-- skills area -->
+     <div class=" leftr bg-slate-200">
+        <div class="pt-3 p-3 text-lg ">
           <div class="">
             <h3 class="uppercase text-xl text-sky-600 font-semibold">Skills/Proficiency </h3>
-            <div class="text-black">
-              <div class="d-flex">
-                <p>Proficient</p>
-                –
-                <p>Intermediate</p>
-                –
-                <p>Basic</p>
-              </div>
-              <p>
-                &nbsp;&nbsp;+++&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;++&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+
-              </p>
-            </div>
-            <p v-for="item of data.skills" class="text-black">{{ item.name }} ({{ item.level === 'Proficient' ? "+++" : item.level === 'Intermediate' ? '++' : '+' }})</p>
+        
+             <div v-for="item of data.skills" class="text-black">
+              {{ item.name }} {{ item.level === 'Proficient' ? "+++" : item.level === 'Intermediate' ? '++' : '+' }}
+            </div> 
           </div>
           <div class="block">
             <h3 class="uppercase tracking-wide text-xl text-sky-600 font-semibold mt-3">Tools </h3>
-            <p class="text-black" v-for="item of data.tools">{{ item }}</p>
+            <div class="text-black" v-for="item of data.tools">{{ item }}</div>
           </div>
-          <div class="block">
-            <h3 class="uppercase tracking-wide text-xl text-sky-600 font-semibold mt-3">Awards & Certifications </h3>
-            <p class="text-black mb-2" v-for="item of data.awardsAndCertifications">
+          <h3 class="uppercase tracking-wide text-xl text-sky-600 font-semibold mt-3">Awards & Certifications </h3>
+          <div v-for="item in data.awardsAndCertifications" class="block">
+            <p class="text-black mb-2">
             <p>{{ item.certification }}</p>
             <p class="italic">{{ item.startDate }} - {{ item.endDate }}</p>
             </p>
           </div>
-          <div class="block">
-            <h3 class="uppercase tracking-wide text-xl text-sky-600 font-semibold mt-3">Volunteer work & interest </h3>
-            <p class="text-black mb-2" v-for="item of data.volunteerWork">
+          <h3 class="uppercase tracking-wide text-xl text-sky-600 font-semibold mt-3">Volunteer work & interest </h3>
+          <div class="block" v-for="item of data.volunteerWork">
+            <p class="text-black mb-2">
             <p class="font-bold">{{ item.role }}</p>
             <p>{{ item.work }}</p>
             </p>
@@ -75,28 +89,15 @@ export default{
                 &nbsp;+++&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;++&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+
               </p>
             </div>
-            <p class="text-black" v-for="item of data.languages">
+            <div class="text-black" v-for="item of data.languages">
             <p>{{ item.name }} ({{ item.level === 'Native' ? "+++" : item.level === 'Fluent' ? '++' : '+' }})</p>
-            </p>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <!-- leftSide panel ends here -->
-    <!-- rightSide panel start from here -->
-    <div class="rightSide">
-      <div class="p-3 w-full h-80 nameSide">
-        <div class="w-full d-flex justify-content-end">
-          <img class="img-fluid w-40 h-20 object-contain" src="https://amalitech.com/wp-content/uploads/2020/04/amali-services-white-01-300x86.png" alt="" />
-        </div>
-        <div class="mt-16 ml-10 text-4xl">
-          <h1 class="block fs-1 leading-tight font-bold text-white " id="name">{{ data.firstName }}</h1>
-          <p class=" fs-3 font-medium " id="title">{{ data.jobTitle }}</p>
         </div>
       </div>
 
       <!-- A block of Work Experience -->
-      <div class="pt-3 px-16 md:px-16 sm:px-10 text-lg ">
+      <div class="pt-3 rightr p-3 bg-white text-lg ">
         <div class="">
           <div class="uppercase tracking-wide text-xl text-sky-600 font-bold mb-3">Work Experience</div>
           <div class="" v-for="item of data.workExperience">
@@ -137,19 +138,67 @@ export default{
       <!-- rightSide panel ends here -->
     </div>
   </div>
-  </template>
+  </div>
+</template>
 
 <style>
-.nameSide {
+.primage{
+  width: 20%;
+  -webkit-print-color-adjust: "exact",
+}
+.u-info-pane{
+  width: 70%;
   background-color: #0C4767;
   color: #E1E1E1;
 }
 
-.rightSide {
-  flex: 4;
+.bgc{
+  background-color: #0C4767;
+  color: #E1E1E1;
+}
+.logoimg{
+  height: 100px;
+  width: 200px;
+  object-fit: contain;
+}
+.profile{
+  width: 100%;
+  height:200px;
+  object-fit: cover; 
+}
+.left{
+  width: 30%;
+}
+.right{
+  width: 70%;
 }
 
-.leftSide {
-  flex: 2;
+.leftr{
+  width: 30%;
+}
+.rightr{
+  width: 70%;
+}
+
+@media print {
+   .bgg{
+    display: none !important;
+   }
+   
+   @page  
+{ 
+    size: A4 !important;   /* auto is the initial value */ 
+
+    /* this affects the margin in the printer settings */ 
+    margin: 5px 0px 20px 0px;  
+} 
+
+body  
+{ 
+    /* this affects the margin on the content before sending to printer */ 
+    margin: 0px;  
+
+} 
+
 }
 </style>

@@ -7,8 +7,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "html-to-pdfmake": "^2.4.9",
+    "html2pdf.js": "^0.10.1",
+    "jspdf": "^2.5.1",
+    "pdfmake": "^0.2.6",
     "vue": "^3.2.41",
-    "vue-router": "^4.1.5"
+    "vue-router": "^4.1.5",
+    "vue3-simple-html2pdf": "^0.0.7"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.1.2",
