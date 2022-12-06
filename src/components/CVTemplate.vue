@@ -43,8 +43,8 @@ export default{
 
       <div class="u-info-pane">
         <div class="w-full d-flex justify-content-end">
-          <img class="logoimg" src="./amalitech logo.png" alt="logo" />
-          <!-- <img class="logoimg" src="https://amalitech.com/wp-content/uploads/2020/04/amali-services-white-01-300x86.png" alt="" /> -->
+          <!-- <img class="logoimg" src="./amalitech logo.png" alt="logo" /> -->
+          <img class="logoimg" src="https://amalitech.com/wp-content/uploads/2020/04/amali-services-white-01-300x86.png" alt="logo" />
         </div>
         <div class="px-10 pt-4 text-4xl">
           <h1 class="block fs-1 leading-tight font-bold text-white " id="name">{{ data.firstName }}</h1>
